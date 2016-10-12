@@ -25,7 +25,7 @@ function solExists() {
 }//solexists
 
 $togglesol.click(function() {
-	$listofsolutions.toggle();
+	$listofsolutions.fadeToggle();
 
 	// dear future self: find out how this works...
 	// specifically the text function
