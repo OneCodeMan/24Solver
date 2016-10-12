@@ -5,6 +5,7 @@
 // P(4, 4) = (4*3*2*1)/0!
 // P(4, 4) = 24/1 
 // P(4, 4) = 24
+// issues: floor division/floats are seen right, algorithm can be faster
 
 $listofsolutions = $("#listofsolutions");
 $solutiontitle = $("#solutiontitle");
@@ -25,7 +26,7 @@ function solExists() {
 }//solexists
 
 $togglesol.click(function() {
-	$listofsolutions.toggle();
+	$listofsolutions.fadeToggle();
 
 	// dear future self: find out how this works...
 	// specifically the text function
